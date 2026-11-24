@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VoltReady: Electrician Exam Prep</title>
+<meta name="description" content="Pass the journeyman or master electrician exam. NEC code lookup drills, step-by-step calculations, timed exams and flashcards: 1,700+ practice questions.">
+<meta property="og:title" content="VoltReady: Electrician Exam Prep">
+<meta property="og:description" content="NEC lookup drills, calculations, timed exams and flashcards for the journeyman and master electrician exam.">
+<meta property="og:image" content="https://spygr.github.io/voltready-privacy/img/og.jpg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="img/icon-192.png">
+<style>
+  :root { --bg:#0b0e13; --card:#141922; --line:#232a36; --text:#f4f6fa; --muted:#8d97a8; --accent:#ffc21a; --accent-ink:#1a1300; --good:#3ddc84; }
+  @media (prefers-color-scheme: light) { :root:not([data-theme="dark"]) { --bg:#ffffff; --card:#f4f5f8; --line:#e3e6ec; --text:#12161d; --muted:#5d6778; --accent:#d69500; --accent-ink:#ffffff; --good:#1a9e55; } }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:16px/1.6 -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
+  a { color:var(--accent); }
+  .wrap { max-width:1040px; margin:0 auto; padding:0 16px; }
+  header { display:flex; align-items:center; gap:10px; padding:18px 0; }
+  header img { width:36px; height:36px; border-radius:9px; }
+  header strong { font-size:18px; }
+  .hero { display:grid; grid-template-columns:1.1fr .9fr; gap:32px; align-items:center; padding:32px 0 48px; }
+  .hero h1 { font-size:clamp(32px, 6vw, 52px); line-height:1.08; margin:0 0 14px; letter-spacing:-.02em; }
+  .hero h1 span { color:var(--accent); }
+  .hero p { color:var(--muted); font-size:18px; margin:0 0 24px; max-width:520px; }
+  .ctas { display:flex; flex-wrap:wrap; gap:12px; }
+  .btn { display:inline-flex; align-items:center; gap:10px; padding:13px 20px; border-radius:14px; font-weight:800; text-decoration:none; font-size:16px; }
+  .btn.primary { background:var(--accent); color:var(--accent-ink); }
+  .btn.ghost { border:1.5px solid var(--line); color:var(--muted); cursor:default; }
+  .btn svg { width:20px; height:20px; }
+  .phone { justify-self:center; width:min(300px, 80vw); border-radius:34px; border:8px solid #1d2330; box-shadow:0 30px 80px rgba(0,0,0,.45); overflow:hidden; background:#000; }
+  .phone img { display:block; width:100%; }
+  .stats { display:grid; grid-template-columns:repeat(4, 1fr); gap:12px; margin:0 0 56px; }
+  .stat { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:16px; text-align:center; }
+  .stat b { display:block; font-size:26px; color:var(--accent); }
+  .stat span { color:var(--muted); font-size:14px; }
+  h2 { font-size:clamp(24px, 4vw, 32px); margin:0 0 20px; letter-spacing:-.01em; }
+  .features { display:grid; grid-template-columns:repeat(3, 1fr); gap:14px; margin-bottom:56px; }
+  .feature { background:var(--card); border:1px solid var(--line); border-radius:18px; padding:20px; }
+  .feature h3 { margin:0 0 6px; font-size:18px; }
+  .feature p { margin:0; color:var(--muted); font-size:15px; }
+  .shots { display:flex; gap:14px; overflow-x:auto; padding-bottom:12px; margin-bottom:56px; scroll-snap-type:x mandatory; }
+  .shots img { width:210px; flex:none; border-radius:20px; border:1px solid var(--line); scroll-snap-align:start; }
+  .pricing { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:56px; }
+  .plan { background:var(--card); border:1px solid var(--line); border-radius:18px; padding:22px; }
+  .plan.pro { border:2px solid var(--accent); }
+  .plan h3 { margin:0 0 4px; font-size:20px; }
+  .plan ul { margin:12px 0 0; padding-left:20px; color:var(--muted); }
+  .plan .price { font-size:15px; color:var(--text); }
+  details { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:14px 18px; margin-bottom:10px; }
+  summary { font-weight:700; cursor:pointer; }
+  details p { color:var(--muted); margin:10px 0 0; }
+  footer { border-top:1px solid var(--line); margin-top:56px; padding:24px 0 48px; color:var(--muted); font-size:13px; }
+  footer nav { display:flex; gap:18px; flex-wrap:wrap; margin-bottom:12px; font-size:15px; }
+  @media (max-width:760px) {
+    .hero { grid-template-columns:1fr; padding-top:8px; }
+    .phone { order:-1; width:min(240px, 70vw); }
+    .stats { grid-template-columns:repeat(2, 1fr); }
+    .features, .pricing { grid-template-columns:1fr; }
+    .shots img { width:170px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header><img src="img/icon-192.png" alt=""><strong>VoltReady</strong></header>
+
+  <section class="hero">
+    <div>
+      <h1>Pass your electrician exam <span>on the first try.</span></h1>
+      <p>Most candidates don’t fail because they don’t know the code. They fail because they can’t find answers in the NEC fast enough, or get stuck on the calculations. VoltReady trains exactly those two skills.</p>
+      <div class="ctas">
+        <a class="btn primary" href="https://play.google.com/store/apps/details?id=com.voltready.app">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 2.5v19l10.2-9.5zM15.6 13.4l2.6 2.4-11 6.2zM18.2 8.2l-2.6 2.4L7.2 2.6zM19.6 9l2.4 1.4c.7.4.7 1.4 0 1.8L19.6 13.6 16.9 12z"/></svg>
+          Get it on Google Play
+        </a>
+        <span class="btn ghost">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.6c0-2.4 2-3.6 2.1-3.7-1.1-1.7-2.9-1.9-3.5-1.9-1.5-.2-2.9.9-3.7.9-.8 0-1.9-.9-3.2-.8-1.6 0-3.2 1-4 2.5-1.7 3-.4 7.4 1.2 9.8.8 1.2 1.8 2.5 3 2.4 1.2 0 1.7-.8 3.1-.8 1.5 0 1.9.8 3.2.8s2.1-1.2 2.9-2.4c.9-1.4 1.3-2.7 1.3-2.8-.1 0-2.4-.9-2.4-4zM14 5.4c.7-.8 1.1-1.9 1-3-1 0-2.1.7-2.8 1.5-.6.7-1.2 1.8-1 2.9 1.1.1 2.1-.6 2.8-1.4z"/></svg>
+          App Store: coming soon
+        </span>
+      </div>
+    </div>
+    <div class="phone"><img src="img/01-home.jpg" alt="VoltReady home screen with exam readiness score"></div>
+  </section>
+
+  <section class="stats">
+    <div class="stat"><b>1,700+</b><span>practice questions</span></div>
+    <div class="stat"><b>26</b><span>calculation topics</span></div>
+    <div class="stat"><b>590+</b><span>flashcards</span></div>
+    <div class="stat"><b>50 Q</b><span>timed exam simulator</span></div>
+  </section>
+
+  <h2>Everything you need for exam day</h2>
+  <section class="features">
+    <div class="feature"><h3>Code lookup trainer</h3><p>Grab your own NEC book and find each requirement against the clock. See which chapters slow you down.</p></div>
+    <div class="feature"><h3>Calculation coach</h3><p>Box fill, conduit fill, ampacity, motors, voltage drop, transformers and load calcs, step by step with hints.</p></div>
+    <div class="feature"><h3>Exam simulator</h3><p>Quick 20-question exams and full 50-question timed simulations, with results by category.</p></div>
+    <div class="feature"><h3>Code knowledge by topic</h3><p>Grounding, services, wiring methods, receptacles, PV, EV charging, hazardous locations and NEC tables.</p></div>
+    <div class="feature"><h3>Spaced-repetition flashcards</h3><p>Formulas, key numbers and “where is it in the NEC?” cards that come back right when you need them.</p></div>
+    <div class="feature"><h3>Readiness score</h3><p>Know when you’re ready. Daily challenge, streaks, exam-day countdown and a “My Mistakes” list.</p></div>
+  </section>
+
+  <h2>See it in action</h2>
+  <section class="shots" aria-label="App screenshots">
+    <img src="img/02-exam-simulator.jpg" alt="Exam simulator" loading="lazy">
+    <img src="img/03-calculation-coach.jpg" alt="Calculation coach" loading="lazy">
+    <img src="img/04-code-lookup.jpg" alt="Code lookup trainer" loading="lazy">
+    <img src="img/05-progress.jpg" alt="Progress and readiness" loading="lazy">
+    <img src="img/06-flashcards.jpg" alt="Flashcards" loading="lazy">
+    <img src="img/07-calculators.jpg" alt="Electrical calculators" loading="lazy">
+  </section>
+
+  <h2>Free to start</h2>
+  <section class="pricing">
+    <div class="plan">
+      <h3>Free</h3>
+      <div class="price">No account needed</div>
+      <ul><li>Core practice and daily challenge</li><li>20-question quick exams</li><li>Electrical calculators</li><li>NEC quick reference</li></ul>
+    </div>
+    <div class="plan pro">
+      <h3>VoltReady Pro</h3>
+      <div class="price">Lifetime, yearly or monthly. See prices in the app.</div>
+      <ul><li>Every lookup drill and all 1,700+ questions</li><li>Master Electrician mode</li><li>Full 50-question and custom exams</li><li>All flashcard decks</li></ul>
+    </div>
+  </section>
+
+  <h2>Questions</h2>
+  <details><summary>Which NEC edition does VoltReady use?</summary><p>References follow the 2023 NEC. Check which edition and exam rules your state uses.</p></details>
+  <details><summary>Do I need my own code book?</summary><p>Yes. VoltReady doesn’t include NEC text. The lookup trainer is built for practicing with your own book, just like an open-book exam.</p></details>
+  <details><summary>Journeyman or master?</summary><p>Both. Switch to Master mode for service, feeder, transformer and multifamily load calculations.</p></details>
+  <details><summary>Do I need an account?</summary><p>No. Your progress stays on your phone. Pro purchases are restored through your Google Play account or Apple ID.</p></details>
+
+  <footer>
+    <nav><a href="support.html">Support</a><a href="./">Privacy Policy</a><a href="terms.html">Terms of Use</a></nav>
+    VoltReady is an independent study tool. It is not affiliated with, endorsed by or sponsored by NFPA, PSI, Prometric or any state licensing board. NEC® and National Electrical Code® are registered trademarks of the National Fire Protection Association.
+  </footer>
+</div>
+</body>
+</html>
